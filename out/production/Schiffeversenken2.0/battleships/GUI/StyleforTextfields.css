@@ -1,0 +1,14 @@
+.text-field{
+    /*-fx-font-family: 'Frijole'; Wenn man das reinmacht spinnen die Textfelder wieder rum (werden größer und kleiner)*/
+    -fx-background-color: GREY;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-text-fill: WHITE;
+}
+/*.text-field:pressed{
+  /*-fx-font-family: Frijole; Wenn man das reinmacht spinnen die Textfelder wieder rum (werden größer und kleiner)
+    -fx-background-color: GREY;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: WHITE;
+}*/

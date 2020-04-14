@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.stage.Screen?>
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="battleships.GUI.ControllerMenu">
+    <children>
+        <ImageView fx:id="backgrd" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/Hintergrund.jpg" />
+            </image>
+         <viewport>
+            <Rectangle2D width="1920.0" />
+         </viewport>
+        </ImageView>
+        <VBox alignment="CENTER" layoutX="55.0" layoutY="-26.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="onePlayer" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onePlayerMode" prefHeight="60.0" prefWidth="300.0" text="One Player" textAlignment="CENTER">
+                    <font>
+                        <Font name="Monospaced Regular" size="30.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </Button>
+                <Button fx:id="twoPlayer" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#PVP" prefHeight="60.0" prefWidth="300.0" text="Two Player" textAlignment="CENTER">
+                    <font>
+                        <Font name="Monospaced Regular" size="30.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </Button>
+                <Button fx:id="kiki" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#KIvsKI" prefHeight="60.0" prefWidth="300.0" text="KI vs KI" textAlignment="CENTER">
+                    <font>
+                        <Font name="Monospaced Regular" size="30.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </Button>
+            </children>
+        </VBox>
+        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fx:id="Einstellungen" accessibleRole="BUTTON" fitHeight="54.0" fitWidth="56.0" onMouseClicked="#Einstellung" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/icons8-ship-wheel-100.png" />
+                    </image>
+               <HBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </HBox.margin>
+                </ImageView>
+                <ImageView fx:id="Shutdown" accessibleRole="BUTTON" fitHeight="150.0" fitWidth="50.0" focusTraversable="true" onMouseClicked="#quit" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                    <image>
+                        <Image url="@../../images/icons8-shutdown-100.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="10.0" top="10.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+            <padding>
+                <Insets right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+      <Rectangle fx:id="RecEinstellung" arcHeight="5.0" arcWidth="5.0" fill="#000000cc" height="1080.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox fx:id="HboxEinstellung" alignment="CENTER" layoutX="528.0" layoutY="387.0" maxHeight="150.0" maxWidth="700.0" prefHeight="150.0" prefWidth="700.0" visible="false" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="400.0">
+         <children>
+            <VBox>
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+               <children>
+                  <ImageView fx:id="QuitFromEinstellung" accessibleRole="BUTTON" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#QuitFromEinstellung" onMouseEntered="#QuitEinstellungMouseEntered" onMouseExited="#QuitEinstellungMouseExit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/icons8-fenster-schliessen-100.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Screen" textFill="WHITE">
+                           <font>
+                              <Font name="Product Sans" size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Button fx:id="Fullscreen" mnemonicParsing="false" onAction="#FullscreenMode" text="Full">
+                                 <font>
+                                    <Font name="Product Sans" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Window" mnemonicParsing="false" onAction="#WindowMode" text="Window">
+                                 <font>
+                                    <Font name="Product Sans" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="KI Stärke" textFill="WHITE">
+                           <font>
+                              <Font name="Product Sans" size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" text="Easy">
+                                 <font>
+                                    <Font name="Product Sans" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Middle">
+                                 <font>
+                                    <Font name="Product Sans" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Hard">
+                                 <font>
+                                    <Font name="Product Sans" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+        
+    </children>
+</AnchorPane>

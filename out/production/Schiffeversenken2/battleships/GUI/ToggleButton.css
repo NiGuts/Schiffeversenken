@@ -1,0 +1,38 @@
+.switch-left-right .switch-label {
+ 	-fx-overflow: hidden;
+}
+.switch-left-right .switch-label:before, .switch-left-right .switch-label:after {
+   	-fx-width: 20px;
+   	-fx-height: 20px;
+   	-fx-top: 4px;
+   	-fx-left: 0;
+   	-fx-right: 0;
+   	-fx-bottom: 0;
+   	-fx-padding: 11px 0 0 0;
+   	-fx-text-indent: -12px;
+   	-fx-border-radius: 20px;
+ 	-fx-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.switch-left-right .switch-label:before {
+   	-fx-background: #eceeef;
+   	-fx-text-align: left;
+   	-fx-padding-left: 80px;
+}
+.switch-left-right .switch-label:after {
+  	-fx-text-align: left;
+   	-fx-text-indent: 9px;
+   	-fx-background: #FF7F50;
+   	-fx-left: -100px;
+   	-fx-opacity: 1;
+   	-fx-width: 100%;
+}
+.switch-left-right .switch-input:checked: ~ .switch-label:before {
+ 	-fx-opacity: 1;
+   	-fx-left: 100px;
+}
+.switch-left-right .switch-input:checked: ~ .switch-label:after {
+  	-fx-left: 0;
+}
+.switch-left-right .switch-input:checked: ~ .switch-label {
+  	-fx-background: inherit;
+}
