@@ -1,0 +1,2 @@
+cd Schiffeversenken\out\production\Schiffeversenken2.0
+"..\..\..\..\Java\jdk-11.0.2\bin\java.exe"  --module-path "..\..\..\..\Java\javafx-sdk-11.0.2\lib" --add-modules javafx.controls,javafx.fxml battleships.GUI.Main
