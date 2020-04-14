@@ -17,6 +17,11 @@ Features:
 <li>Online Multiplayer im LAN</li>
 <li>Laden und Speichern der Spielstände (auch im Multiplayer)</li>
 
+![Gameplay Screenshot](https://github.com/NiGuts/Dino-Endlessrunner/blob/master/Dino-Endlessrunner.png)
+Abbildung 1: Manuelles Positionieren der Schiffe per Drag'n Drop
 
 
-<b> Sehr ausführliche Informationen zur Bedienung des Spiels sind in der Handbuch-PDF zu finden</b>
+
+![Gameplay Screenshot](https://github.com/NiGuts/Dino-Endlessrunner/blob/master/Dino-Endlessrunner.png)
+Abbildung 2: Multiplayer Spiel (Gegnerisches Feld rechts unten kann durch klicken vergrößert werden)
+
