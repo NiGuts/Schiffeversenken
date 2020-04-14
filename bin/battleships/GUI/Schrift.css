@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Frijole';
+    src: url('/fonts/Frijole-Regular.ttf');
+}
+
+.text{
+    -fx-font-family: 'Frijole';
+    -fx-text-fill: #FFBF;
+    -fx-font-size: 20px;
+}

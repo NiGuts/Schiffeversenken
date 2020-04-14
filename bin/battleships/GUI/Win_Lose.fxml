@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1010.0" prefWidth="1734.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="battleships.GUI.ControllerMenu">
+   <children>
+      <ImageView fx:id="VerlorenBild" layoutX="-207.0" layoutY="-212.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../images/Verloren.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="Win_Vbox" alignment="CENTER" layoutX="180.0" layoutY="97.0" visible="false" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="166.0" prefWidth="645.0" style="-fx-background-effect: DropShadow;" text="Du hast Gewonnen" textFill="WHITE">
+               <font>
+                  <Font name="Product Sans" size="62.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="306.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Win.gif" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox fx:id="Lose_Vbox" alignment="CENTER" layoutX="15.0" layoutY="200.0" visible="false" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="127.0" prefWidth="645.0" text="Du hast Verloren" textFill="WHITE">
+               <font>
+                  <Font name="Product Sans" size="62.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="277.0" fitWidth="433.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Lose.gif" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="350.0" layoutY="560.0" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="560.0">
+         <children>
+            <Button maxHeight="160.0" maxWidth="400.0" minHeight="60.0" minWidth="300.0" mnemonicParsing="false" onAction="#changeScene_fromWinLose_toMenu" prefHeight="95.0" prefWidth="400.0" stylesheets="@Menu_Einstellungen.css" text="Menü" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Product Sans" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

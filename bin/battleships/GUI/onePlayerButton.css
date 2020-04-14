@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Frijole';
+    src: url('/fonts/Frijole-Regular.ttf');
+}
+
+.button {
+    -fx-background-radius: 50px;
+    -fx-background-color: transparent;
+    -fx-font-family: "Frijole";
+    -fx-font-size: 30px;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+
+    -fx-height: 100%;
+    -fx-background-color: #0396A6;
+    -fx-text-fill: #FFBF;
+}
+
+

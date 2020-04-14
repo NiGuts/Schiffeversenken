@@ -1,0 +1,17 @@
+.button{
+    -fx-background-color: transparent;
+    -fx-font-family: 'Frijole';
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+}
+.button:hover{
+    -fx-background-color: #0396A6;
+    -fx-text-fill: #FFBF;
+    -fx-background-radius: 50px;
+    -fx-font-family: 'Frijole';
+    -fx-font-size: 30px;
+}
+.label{
+    -fx-background-color: transparent;
+    -fx-font-family: Frijole;
+}
