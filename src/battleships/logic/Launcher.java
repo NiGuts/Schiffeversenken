@@ -118,7 +118,7 @@ public class Launcher extends GameObject {
     public static void aiAsClient(String ip) throws Exception {
         type = "Client";
         ai = true;
-        opponent = new Op_Player(ip);   //Emin: 141.18.112.222
+        opponent = new Op_Player(ip); 
         player = new Opponent_AI(10);
         Opponent_AI l = (Opponent_AI) player;
         opponent.connectToServer();
