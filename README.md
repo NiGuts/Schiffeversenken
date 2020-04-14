@@ -30,5 +30,5 @@ Abbildung 1: Manuelles Positionieren der Schiffe per Drag'n Drop
 ![Gameplay Screenshot](https://github.com/NiGuts/Schiffeversenken2/blob/master/Gameplay.png)
 
 
-Abbildung 2: Multiplayer Spiel (Gegnerisches Feld rechts unten kann durch klicken vergrößert werden)
+Abbildung 2: Multiplayer Spiel (Gegnerisches Feld rechts unten kann durch Klicken vergrößert werden)
 
